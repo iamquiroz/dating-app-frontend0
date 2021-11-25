@@ -2,10 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+import firebaseConfig from './firebaseConfig';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+
+render(
+ ( <FirebaseAppProvider firebaseConfig={ firebaseConfig }>
+  <App />
+  </FirebaseAppProvider>
+ )
   document.getElementById("root")
 );
